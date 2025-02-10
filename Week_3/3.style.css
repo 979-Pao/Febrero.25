@@ -301,6 +301,7 @@ header img {
 
   .service-box img {
     width: 400px;
+    height: 250px;
    }
 
   .service-box p {
@@ -348,6 +349,11 @@ header img {
   padding: 2rem;
 }
 
+#Bomb-attack{
+  background-color: #1e1e2f3b;
+  padding: 3rem 2rem;
+  }
+
 .bomb-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -361,7 +367,6 @@ header img {
     width: 300px;
     height: 200px;
     display: flex;
-
   }
 
   /* La “carta” en sí; uso de transform-style para mantener la capa 3D */
@@ -409,12 +414,124 @@ header img {
   }
 
   .bomb-back1 {
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTO0iGfhBM1N5zEP2wnZm82_JFueM-PgV0qw&s);
+    background-image: url(https://www.mapfre.com.pe/media/la-importancia-de-contar-con-un-extintor-en-casa-1.jpg);
     background-size: cover;
     color: #fff;
     transform: rotateY(180deg); /* Para que esté “detrás” */
   }
 
+  /*ANIMACION KEYFRAMES */
+
+  #animacion_keyframes h3 {
+    font-size: 2em;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .container_animation{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 80px;
+    max-width: 1500px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .cuadradoacirculo {
+    width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: #ddd solid;
+    margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .cuadrado {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(98, 26, 233);
+    color: white;
+    margin: 0 auto;
+    /* transition-property: width, color;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s; */
+  }
+  
+  .cuadrado:hover {
+    background-color: rgb(29, 199, 117);
+    color: black;
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    transition-property: width, color;
+    /* transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;*/
+  }
+
+  .containerpelota {
+    width: 600px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    border: #ddd solid;
+  }
+
+  .pelotaBox {
+    width: 200px;
+    height: 200px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 200px;
+  }
+
+  .ball {
+    background: #b01ce6;
+    animation: bounceBox 1.5s infinite;
+    position: relative;
+    margin: 0 auto;
+    }
+
+  @keyframes bounceBox {
+    0%, 100% {
+      top: 0;
+    }
+    60% {
+      top: -60px;
+    }
+  }
+
+  .container_animation2{
+    gap: 80px;
+    max-width: 1500px;
+    margin: 0 auto;
+    text-align: center;
+    border: #26032f solid;
+  }
+
+  .logo{
+
+  }
+
+  .slogan{
+
+  }
+
+  .imagen img{
+    width: 300px;
+    height: 200px7;
+
+  }
 
   /* ================================
    PRÓXIMOS ESTRENOS (FLEX)
