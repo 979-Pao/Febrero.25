@@ -58,18 +58,12 @@ header img {
     --fuente-primaria: Arial, Helvetica, sans-serif;
   }
 
-  /* ================================
-   RESETEO BÁSICO
-   ================================ */
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
 
-  /* ================================
-   ESTILOS GENERALES
-   ================================ */
   body {
     font-family: var(--fuente-primaria);
     background: linear-gradient(120deg, #5378f3, #e89edd);
@@ -89,7 +83,6 @@ header img {
     margin-bottom: 1rem;
   }
 
-  /* Enlaces de navegación */
   a {
     text-decoration: none;
     color: var(--color-texto);
@@ -99,9 +92,6 @@ header img {
     color: var(--color-acento);
   }
 
-  /* ================================
-   HEADER
-   ================================ */
   header {
     background-color: var(--color-primario);
     padding: 1.5rem;
@@ -125,9 +115,6 @@ header img {
     gap: 1.5rem;
   }
 
-  /* ================================
-   HERO
-   ================================ */
   .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqnHJWOIsKq_KQYuWH9n2zwHdS_r-US88GeQ&s");
@@ -149,9 +136,6 @@ header img {
     margin: 0 auto;
   }
 
-  /* ================================
-   PELÍCULAS DESTACADAS (GRID)
-   ================================ */
   .intro {
     justify-content: center;
     padding: 2rem 1rem;
@@ -326,6 +310,7 @@ header img {
     margin: 0 auto;
     justify-content: space-evenly;
   }
+
   .container-box .service-box {
     flex: 1 1 400px;
     background-color: var(--color-primario);
@@ -369,7 +354,6 @@ header img {
     display: flex;
   }
 
-  /* La “carta” en sí; uso de transform-style para mantener la capa 3D */
   .bomb {
     width: 100%;
     height: 100%;
@@ -378,12 +362,10 @@ header img {
     transition: transform 0.7s ease;
    }
 
-  /* Al hacer hover sobre el contenedor, rotamos la carta 180º en el eje Y */
   .bomb-container:hover .bomb {
     transform: rotateY(180deg);
    }
 
-  /* Ambas caras de la carta tienen mismas dimensiones y posición */
   .bomb-face {
     width: 100%;
     height: 100%;
@@ -398,14 +380,12 @@ header img {
     font-weight: bold;
    }
 
-  /* Cara frontal */
   .bomb-front {
     background-color: #3232b6;
     color: #fff;
     font-size:xx-large;
   }
 
-  /* Cara trasera */
   .bomb-back {
     background-image: url(https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/4353/production/_105753271_gettyimages-955124060.jpg.webp);
     background-size: cover;
@@ -533,65 +513,6 @@ header img {
 
   }
 
-  /* ================================
-   PRÓXIMOS ESTRENOS (FLEX)
-   ================================ 
-  .proximos-container {
-    background-color: #222232;
-    padding: 3rem 2rem;
-  }
-
-  .proximos-container h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-    font-size: 1.8rem;
-  }
-
-  .proximos-estrenos {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    justify-content: space-evenly;
-  }
-
-  .proximos-estrenos .estreno {
-    flex: 1 1 300px;
-    background-color: var(--color-primario);
-    margin: 0.5rem;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .proximos-estrenos .estreno:hover {
-    transform: scale(1.02);
-  }
-
-  .proximos-estrenos img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-  }
-
-  .proximos-estrenos h4 {
-    font-size: 1.3rem;
-    margin-top: 1rem;
-    margin-left: 1rem;
-  }
-
-  .proximos-estrenos p {
-    margin: 0.5rem 1rem 1rem;
-    color: var(--color-texto-secundario);
-    flex: 1;
-  }
-
-  /* ================================
-   SOBRE EL GÉNERO
-   ================================ */
   .sobre-seccion {
     background-color: #2a2a3a;
     padding: 3rem 2rem;
@@ -611,82 +532,6 @@ header img {
     line-height: 1.8;
   }
 
-  /* ================================
-   GALERÍA CINEMATOGRÁFICA (GRID AVANZADO)
-   ================================ */
-  .galeria-container {
-    background-color: var(--color-secundario);
-    padding: 3rem 2rem;
-    /* simple backdrop to differentiate */
-  }
-
-  .galeria-container h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-    font-size: 1.8rem;
-  }
-
-  /* 
-  Ejemplo avanzado de grid con áreas definidas,
-  para un diseño más creativo
-*/
-  .galeria {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 200px 200px 200px;
-    grid-gap: 1rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    grid-template-areas:
-      "item1 item1 item2"
-      "item3 item4 item2"
-      "item3 item4 item5";
-  }
-
-  /* Asignación de áreas */
-  .galeria .item1 {
-    grid-area: item1;
-  }
-  .galeria .item2 {
-    grid-area: item2;
-  }
-  .galeria .item3 {
-    grid-area: item3;
-  }
-  .galeria .item4 {
-    grid-area: item4;
-  }
-  .galeria .item5 {
-    grid-area: item5;
-  }
-
-  .galeria div {
-    background-color: var(--color-terciario);
-    border-radius: 8px;
-    overflow: hidden;
-    position: relative;
-    transition: transform 0.3s ease;
-  }
-
-  .galeria div:hover {
-    transform: scale(1.03);
-  }
-
-  .galeria div img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-
-  /* ================================
-   SECCIÓN DE RECOMENDACIONES (FLEX AVANZADO)
-   ================================ */
-
-
-  /* ================================
-   FOOTER
-   ================================ */
   footer {
     background-color: var(--color-primario);
     padding: 1.5rem;
